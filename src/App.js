@@ -11,7 +11,7 @@ class App extends Component {
     ]
 }
 
-removeCharacter = (index) => {
+removeItem = (index) => {
   const {todoList} = this.state
 
   this.setState({
@@ -32,7 +32,7 @@ removeCharacter = (index) => {
        <AppTitle />
        <Form handleSubmit={this.handleSubmit} />
       </header>
-      <TodoList list={todoList}/>
+      <TodoList list={todoList} removeItem={this.removeItem}/>
     </div>
 
     )

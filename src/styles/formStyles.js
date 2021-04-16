@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-around',
 
         '& #addBtn': {
-            marginTop: '1.65rem',
+            margin: '1.65rem 0 1.65rem 0.5rem',
             backgroundColor: '#4fc3f7',
             color: 'white'
         },

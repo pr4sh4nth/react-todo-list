@@ -1,5 +1,4 @@
 import {Button, TextField} from "@material-ui/core";
-import './styles/Form.css';
 import useStyles from './styles/formStyles';
 import React, {useState} from 'react';
 
