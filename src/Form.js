@@ -23,16 +23,19 @@ function Form (props) {
       <form className={classes.root}>
          <div>
          <TextField   required
+        
           name="title"
           label="Title"
           variant="outlined"
           placeholder="Title.."
+          
           value={title}
             onChange={handleChange}
          />  
         </div>
        <div>
          <TextField
+        
           name="desc"
           label="Description"
           variant="outlined" 
