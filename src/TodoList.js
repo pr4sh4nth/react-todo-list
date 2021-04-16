@@ -1,8 +1,14 @@
 import {Component} from 'react';
+import TodoItem from './TodoItem';
 
 class TodoList extends Component {
+    
     render() {
-        return <h1> to do list here. </h1>
+        console.log(this.props);
+        const {list} = this.props;
+        const todoList = list.map((todoItem, index) => { return <TodoItem key={index} item={todoItem}/>})
+
+        return todoList
     }
 }
 

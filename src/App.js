@@ -5,14 +5,34 @@ import Form from './Form';
 import TodoList from './TodoList';
 
 class App extends Component {
+  state = {
+    todoList: [
+      
+    ]
+}
+
+removeCharacter = (index) => {
+  const {todoList} = this.state
+
+  this.setState({
+      todoList: todoList.filter((todoItem, i) =>{
+          return i !== index
+      })
+  })
+}
+
+  handleSubmit = (todoItem) => {
+    this.setState({todoList: [...this.state.todoList, todoItem]})
+}
   render() {
+    const {todoList} = this.state;
     return (
     <div> 
       <header className="App-header">
        <AppTitle />
-       <Form />
+       <Form handleSubmit={this.handleSubmit} />
       </header>
-      <TodoList />
+      <TodoList list={todoList}/>
     </div>
 
     )
