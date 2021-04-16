@@ -1,7 +1,8 @@
 import {Component} from 'react';
-import './css/App.css';
+import './styles/App.css';
 import AppTitle from './AppTitle';
 import Form from './Form';
+import TodoList from './TodoList';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
        <AppTitle />
        <Form />
       </header>
+      <TodoList />
     </div>
 
     )

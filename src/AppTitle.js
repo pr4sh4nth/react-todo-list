@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './css/AppTitle.css';
+import './styles/AppTitle.css';
 
 function AppTitle (){
     return (

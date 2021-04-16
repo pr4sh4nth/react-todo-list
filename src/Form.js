@@ -1,6 +1,6 @@
 import {Button, TextField} from "@material-ui/core";
-import './css/Form.css';
-import useStyles from './css/formStyles';
+import './styles/Form.css';
+import useStyles from './styles/formStyles';
 
 function Form () {
     const classes = useStyles();
