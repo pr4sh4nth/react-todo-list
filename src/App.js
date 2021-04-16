@@ -1,18 +1,16 @@
-import logo from './logo.svg';
 import {Component} from 'react';
-import './App.css';
+import './css/App.css';
+import AppTitle from './AppTitle';
+import Form from './Form';
 
 class App extends Component {
   render() {
     return (
-    <div > 
+    <div> 
       <header className="App-header">
-      <h1 className="App-title"> Todo App</h1>
-      <img src={logo} className="App-logo" alt="logo" />
+       <AppTitle />
+       <Form />
       </header>
-   
-    
-    
     </div>
 
     )
